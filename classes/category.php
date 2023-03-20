@@ -47,6 +47,17 @@
             $result = $this->db->select($query);
             return $result;
         }
+        public function del_category($id){
+            $query = "DELETE * FROM tbl_category where catId = '$id'  ";
+            $result = $this->db->delete($query);
+            if ($result ){
+                $aleart = "<span class ='success'> Category Delete Successfully</span>";
+                return $aleart;
+            }else{
+                $aleart = "<span class ='error'> Category Delete Not Successfully</span>";
+                return $aleart;
+            }
+        }
     }
 
     
