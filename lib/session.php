@@ -28,12 +28,12 @@ class Session{
  }
 
  public static function checkSession(){
-    self::init();
-    if (self::get("adminlogin")== false) {
-     self::destroy();
-     header("Location:login.php");
-    }
- }
+   self::init();
+   if (self::get("adminlogin")== false) {
+    self::destroy();
+    header("Location:login.php");
+   }
+}
 
  public static function checkLogin(){
     self::init();
