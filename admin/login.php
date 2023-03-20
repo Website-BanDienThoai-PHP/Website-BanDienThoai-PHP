@@ -1,5 +1,5 @@
-<?php
-	include '../classes/adminlogin.php'
+ <?php
+	include '../classes/adminlogin.php';
 
 ?>
 <?php
@@ -10,7 +10,7 @@
 
 		$login_check = $class->login_admin($adminUser,$adminPass);
 	}
-?>
+?> 
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
